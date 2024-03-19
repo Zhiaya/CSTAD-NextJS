@@ -1,15 +1,22 @@
-
-import { Card } from 'flowbite-react';
-
-export default function MyCard() {
+import { Card, NavbarLink } from "flowbite-react";
+import { Datas } from "./ProductPage";
+type CardProps = {
+  datas: Datas[];
+};
+export default function MyCard({ datas }: CardProps) {
   return (
-    <Card className="max-w-sm" imgSrc="/images/blog/image-4.jpg" horizontal>
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-      </p>
-    </Card>
+    <div>
+      {datas.map((data, index) => (
+        <Card key={index} className="max-w-sm" imgSrc={data.image} horizontal>
+          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {data.title}
+          </h5>
+          <p>20% Scholarship</p>
+          <p className="font-normal text-gray-700 dark:text-gray-400">
+            {data.description}
+          </p>
+        </Card>
+      ))}
+    </div>
   );
 }
