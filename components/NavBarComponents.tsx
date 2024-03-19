@@ -17,15 +17,16 @@ export default function NavBarComponents() {
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-      <NavbarLink href="/enroll" className="text-lg text-blue-800 hover:text-primary lg:hover:text-white">
-                        Enroll
-                    </NavbarLink>
-        <NavbarLink as={Link} href="">
-          About
+      <NavbarLink href="/" >
+          Home
+       </NavbarLink>
+        <NavbarLink as={Link} href="enroll">
+          Enroll
         </NavbarLink>
-        <NavbarLink href="">Enroll</NavbarLink>
-        <NavbarLink href="/ProductCard">Course</NavbarLink>
-        <NavbarLink href="#">Contact</NavbarLink>
+        <NavbarLink href="/course">Course</NavbarLink>
+        <NavbarLink href="/iTNews">IT News</NavbarLink>
+        <NavbarLink href="/job-opportunity">Job Opportunity</NavbarLink>
+        <NavbarLink href="/about">About</NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );

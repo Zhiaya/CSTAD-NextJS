@@ -12,7 +12,7 @@ export default function page() {
       <section>
         <h1 className="text-4xl ml-44">COURSES</h1>
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 gap-3">
+          <div >
            <ProductPage />
           </div>
         </div>
