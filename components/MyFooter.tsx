@@ -14,58 +14,76 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 
-const brand = { 
-    img : "w-36 h-36"
-}
+const brand = {
+  img: "w-24 h-24",
+};
 
 export default function MyFooter() {
   return (
-    <Footer bgDark>
+    <Footer className="bg-blue-800">
       <div className="w-full">
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
-          <div>
-            <Footer.Brand theme={brand}
-              href="https://flowbite.com"
+          <div className="ml-16">
+            <Footer.Brand
+              theme={brand}
+              href="/"
               src="https://istad.co/resources/img/CSTAD_120.png"
-              alt="Flowbite Logo"
-              name="Flowbite"
             />
+            <p className="w-48 my-8 text-white">
+              Start your IT career with CSTAD
+            </p>
           </div>
           <div>
-            <FooterTitle title="help center" />
+            <FooterTitle className="text-white" title="Learn more" />
             <FooterLinkGroup col>
-              <FooterLink href="#">Discord Server</FooterLink>
-              <FooterLink href="#">Twitter</FooterLink>
-              <FooterLink href="#">Facebook</FooterLink>
-              <FooterLink href="#">Contact Us</FooterLink>
+              <FooterLink className="text-white" href="#">
+                Course
+              </FooterLink>
+              <FooterLink className="text-white" href="#">
+                IT News
+              </FooterLink>
+              <FooterLink className="text-white" href="#">
+                Job apportunity
+              </FooterLink>
+              <FooterLink className="text-white" href="#">
+                Privacy Policy
+              </FooterLink>
+              <FooterLink className="text-white" href="#">
+                FAQ
+              </FooterLink>
             </FooterLinkGroup>
           </div>
           <div>
-            <FooterTitle title="legal" />
+            <FooterTitle className="text-white" title="Conact Us" />
             <FooterLinkGroup col>
-              <FooterLink href="#">Privacy Policy</FooterLink>
-              <FooterLink href="#">Licensing</FooterLink>
-              <FooterLink href="#">Terms &amp; Conditions</FooterLink>
+              <FooterLink className="text-white" href="#">
+                <a href="#">(+855) 95-990-910</a>
+              </FooterLink>
+              <FooterLink className="text-white" href="#">
+                <a href="#">(+855) 93-990-910</a>
+              </FooterLink>
             </FooterLinkGroup>
           </div>
           <div>
-            <FooterTitle title="download" />
+            <FooterTitle className="text-white" title="Follow Us" />
             <FooterLinkGroup col>
-              <FooterLink href="#">iOS</FooterLink>
-              <FooterLink href="#">Android</FooterLink>
-              <FooterLink href="#">Windows</FooterLink>
-              <FooterLink href="#">MacOS</FooterLink>
+              
             </FooterLinkGroup>
           </div>
         </div>
-        <div className="w-full bg-gray-700 px-4 py-6 sm:flex sm:items-center sm:justify-between">
-          <FooterCopyright href="#" by="Flowbite™" year={2022} />
+        <div className="w-full bg-blue-800 px-4 py-6 sm:flex sm:items-center sm:justify-between">
+          <FooterCopyright
+            className="text-white"
+            href="#"
+            by="Flowbite™"
+            year={2022}
+          />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <FooterIcon href="#" icon={BsFacebook} />
-            <FooterIcon href="#" icon={BsInstagram} />
-            <FooterIcon href="#" icon={BsTwitter} />
-            <FooterIcon href="#" icon={BsGithub} />
-            <FooterIcon href="#" icon={BsDribbble} />
+            <FooterIcon className="text-white" href="#" icon={BsFacebook} />
+            <FooterIcon className="text-white" href="#" icon={BsInstagram} />
+            <FooterIcon className="text-white" href="#" icon={BsTwitter} />
+            <FooterIcon className="text-white" href="#" icon={BsGithub} />
+            <FooterIcon className="text-white" href="#" icon={BsDribbble} />
           </div>
         </div>
       </div>

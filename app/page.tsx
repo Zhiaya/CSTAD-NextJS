@@ -4,7 +4,7 @@ import ProductPage from "@/components/ProductPage";
 import { NavbarLink } from "flowbite-react";
 import React from "react";
 
-export default function page() {
+export default function Page() {
  
   return (
     <div className="min-h-dvh">
